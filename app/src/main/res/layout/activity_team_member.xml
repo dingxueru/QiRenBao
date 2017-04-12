@@ -132,8 +132,7 @@
                 android:layout_height="wrap_content"
                 android:ellipsize="end"
                 android:hint="暂无工作单位"
-                android:singleLine="true"
-                android:textColor="@color/hint_text" />
+                android:singleLine="true"/>
         </LinearLayout>
 
         <View
@@ -162,7 +161,6 @@
             android:layout_height="wrap_content"
             android:hint="暂无简介"
             android:padding="10dp"
-            android:textColor="@color/hint_text"
             android:textSize="14sp" />
 
         <View
