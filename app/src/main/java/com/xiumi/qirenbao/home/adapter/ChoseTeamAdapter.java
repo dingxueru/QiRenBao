@@ -74,7 +74,7 @@ public class ChoseTeamAdapter extends BaseAdapter {
             myViewHolder = (ViewHolder) convertView.getTag();
         }
         myViewHolder.captainName.setText(item.user.name);
-        myViewHolder.captainOccupation.setText(item.user.user_info.work_title);
+        myViewHolder.captainOccupation.setText(item.user.user_info.work_duty);
         myViewHolder.userLv.setText(item.user.user_info.growth_value+"");
         myViewHolder.workYears.setText(item.user.user_info.work_years);
         myViewHolder.workDuty.setText(item.user.user_info.work_title);

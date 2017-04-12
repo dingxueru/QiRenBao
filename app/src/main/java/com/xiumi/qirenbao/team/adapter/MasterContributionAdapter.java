@@ -79,6 +79,9 @@ public class MasterContributionAdapter extends BaseAdapter {
             viewHolder.growth_value.setText("+" + String.valueOf(growth) + " 经验值");
         }
         switch (item.gift_for_executor_id) {
+            case 0:
+                viewHolder.gift_price.setText("");
+                break;
             case 1:
                 viewHolder.gift_price.setText("礼物：" + item.gift_for_executor_total + "个" + name.get(0));
                 break;

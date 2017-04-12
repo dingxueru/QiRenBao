@@ -47,7 +47,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="性          别："
+                android:text="性        别："
                 android:textColor="@color/black"
                 android:textSize="14sp" />
 
@@ -72,7 +72,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="职          务："
+                android:text="职        务："
                 android:textColor="@color/black"
                 android:textSize="14sp" />
 
@@ -97,7 +97,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="职         称："
+                android:text="职        称："
                 android:textColor="@color/black"
                 android:textSize="14sp" />
 
