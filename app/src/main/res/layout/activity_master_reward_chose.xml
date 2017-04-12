@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/orangenormal">
+
+            <TextView
+                android:id="@+id/back"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="16dp"
+                android:drawableLeft="@drawable/jmui_back_btn" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:gravity="center"
+                android:text="【达人】金额选择"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+        </RelativeLayout>
+    <View
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/shadow_black" />
+
+    <LinearLayout
+    android:id="@+id/layout1"
+    android:paddingRight="16dp"
+    android:paddingLeft="16dp"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="5"
+        android:textColor="#AFAFB1"
+        android:textSize="16sp"
+        android:layout_height="wrap_content"
+        android:text="合同金额 0~5 千"/>
+    <TextView
+        android:layout_marginRight="5dp"
+        android:layout_width="wrap_content"
+        android:textColor="#AFAFB1"
+        android:textSize="18sp"
+        android:layout_height="wrap_content"
+        android:text="推荐"/>
+    <TextView
+        android:textStyle="bold"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:textColor="@color/orangenormal"
+        android:textSize="20sp"
+        android:layout_height="wrap_content"
+        android:text="¥ 5"/>
+
+
+</LinearLayout>
+    <View
+        android:layout_below="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/shadow_black" />
+
+    <LinearLayout
+        android:id="@+id/layout2"
+        android:paddingRight="16dp"
+        android:paddingLeft="16dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="5"
+            android:textColor="#AFAFB1"
+            android:textSize="16sp"
+            android:layout_height="wrap_content"
+            android:text="合同金额 5 千~1 万"/>
+        <TextView
+            android:layout_marginRight="5dp"
+            android:layout_width="wrap_content"
+            android:textColor="#AFAFB1"
+            android:textSize="18sp"
+            android:layout_height="wrap_content"
+            android:text="推荐"/>
+        <TextView
+            android:textStyle="bold"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textColor="@color/orangenormal"
+            android:textSize="20sp"
+            android:layout_height="wrap_content"
+            android:text="¥ 8"/>
+
+
+    </LinearLayout>
+    <View
+        android:layout_below="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/shadow_black" />
+
+    <LinearLayout
+        android:id="@+id/layout3"
+        android:paddingRight="16dp"
+        android:paddingLeft="16dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="5"
+            android:textColor="#AFAFB1"
+            android:textSize="16sp"
+            android:layout_height="wrap_content"
+            android:text="合同金额 1 万~2 万"/>
+        <TextView
+            android:layout_marginRight="5dp"
+            android:layout_width="wrap_content"
+            android:textColor="#AFAFB1"
+            android:textSize="18sp"
+            android:layout_height="wrap_content"
+            android:text="推荐"/>
+        <TextView
+            android:textStyle="bold"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textColor="@color/orangenormal"
+            android:textSize="20sp"
+            android:layout_height="wrap_content"
+            android:text="¥ 18"/>
+
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/shadow_black" />
+    <LinearLayout
+        android:id="@+id/layout4"
+        android:paddingRight="16dp"
+        android:paddingLeft="16dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="5"
+            android:textColor="#AFAFB1"
+            android:textSize="16sp"
+            android:layout_height="wrap_content"
+            android:text="合同金额 2 万~3 万"/>
+        <TextView
+            android:layout_marginRight="5dp"
+            android:layout_width="wrap_content"
+            android:textColor="#AFAFB1"
+            android:textSize="18sp"
+            android:layout_height="wrap_content"
+            android:text="推荐"/>
+        <TextView
+            android:textStyle="bold"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textColor="@color/orangenormal"
+            android:textSize="20sp"
+            android:layout_height="wrap_content"
+            android:text="¥ 28"/>
+
+
+    </LinearLayout>
+    <View
+        android:layout_below="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/shadow_black" />
+    <LinearLayout
+        android:id="@+id/layout5"
+        android:paddingRight="16dp"
+        android:paddingLeft="16dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="5"
+            android:textColor="#AFAFB1"
+            android:textSize="16sp"
+            android:layout_height="wrap_content"
+            android:text="合同金额 3 万~6 万"/>
+        <TextView
+            android:layout_marginRight="5dp"
+            android:layout_width="wrap_content"
+            android:textColor="#AFAFB1"
+            android:textSize="18sp"
+            android:layout_height="wrap_content"
+            android:text="推荐"/>
+        <TextView
+            android:textStyle="bold"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textColor="@color/orangenormal"
+            android:textSize="20sp"
+            android:layout_height="wrap_content"
+            android:text="¥ 58"/>
+
+
+    </LinearLayout>
+    <View
+        android:layout_below="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/shadow_black" />
+    <LinearLayout
+        android:id="@+id/layout6"
+        android:paddingRight="16dp"
+        android:paddingLeft="16dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="5"
+            android:textColor="#AFAFB1"
+            android:textSize="16sp"
+            android:layout_height="wrap_content"
+            android:text="合同金额 6 万~7 万"/>
+        <TextView
+            android:layout_marginRight="5dp"
+            android:layout_width="wrap_content"
+            android:textColor="#AFAFB1"
+            android:textSize="18sp"
+            android:layout_height="wrap_content"
+            android:text="推荐"/>
+        <TextView
+            android:textStyle="bold"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textColor="@color/orangenormal"
+            android:textSize="20sp"
+            android:layout_height="wrap_content"
+            android:text="¥ 68"/>
+
+
+    </LinearLayout>
+    <View
+        android:layout_below="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/shadow_black" />
+    <LinearLayout
+        android:id="@+id/layout7"
+        android:paddingRight="16dp"
+        android:paddingLeft="16dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="5"
+            android:textColor="#AFAFB1"
+            android:textSize="16sp"
+            android:layout_height="wrap_content"
+            android:text="合同金额 7 万~10 万"/>
+        <TextView
+            android:layout_marginRight="5dp"
+            android:layout_width="wrap_content"
+            android:textColor="#AFAFB1"
+            android:textSize="18sp"
+            android:layout_height="wrap_content"
+            android:text="推荐"/>
+        <TextView
+            android:textStyle="bold"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textColor="@color/orangenormal"
+            android:textSize="20sp"
+            android:layout_height="wrap_content"
+            android:text="¥ 88"/>
+
+
+    </LinearLayout>
+    <View
+        android:layout_below="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/shadow_black" />
+    <LinearLayout
+        android:id="@+id/layout8"
+        android:paddingRight="16dp"
+        android:paddingLeft="16dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="5"
+            android:textColor="#AFAFB1"
+            android:textSize="16sp"
+            android:layout_height="wrap_content"
+            android:text="合同金额 10 万~20 万"/>
+        <TextView
+            android:layout_marginRight="5dp"
+            android:layout_width="wrap_content"
+            android:textColor="#AFAFB1"
+            android:textSize="18sp"
+            android:layout_height="wrap_content"
+            android:text="推荐"/>
+        <TextView
+            android:textStyle="bold"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textColor="@color/orangenormal"
+            android:textSize="20sp"
+            android:layout_height="wrap_content"
+            android:text="¥ 188"/>
+
+
+    </LinearLayout>
+    <View
+        android:layout_below="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/shadow_black" />
+
+    <LinearLayout
+        android:id="@+id/layout9"
+        android:paddingRight="16dp"
+        android:paddingLeft="16dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="5"
+            android:textColor="#AFAFB1"
+            android:textSize="16sp"
+            android:layout_height="wrap_content"
+            android:text="合同金额 20 万以上"/>
+        <TextView
+            android:layout_marginRight="5dp"
+            android:layout_width="wrap_content"
+            android:textColor="#AFAFB1"
+            android:textSize="18sp"
+            android:layout_height="wrap_content"
+            android:text="推荐"/>
+        <TextView
+            android:textStyle="bold"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textColor="@color/orangenormal"
+            android:textSize="20sp"
+            android:layout_height="wrap_content"
+            android:text="¥ 288"/>
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_below="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/shadow_black" />
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+    <TextView
+        android:id="@+id/next"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/orangenormal"
+        android:gravity="center"
+        android:text="下一步"
+        android:textColor="@color/white" />
+</LinearLayout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:background="@color/title_bg"
+        android:layout_height="?attr/actionBarSize">
+        <TextView
+            android:id="@+id/back"
+            android:layout_width="40dp"
+            android:layout_marginLeft="16dp"
+            android:layout_height="match_parent"
+            android:drawableLeft="@drawable/jmui_back_btn"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="忘记密码"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:textColor="@color/white"/>
+    </RelativeLayout>
+    <View
+        android:layout_below="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/shadow_black" />
+
+    <LinearLayout
+        android:id="@+id/phone_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:gravity="center"
+        android:background="@color/white">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" 密 码 "
+            android:textColor="@color/text_color"
+            android:textSize="15sp"
+            android:padding="5dp"/>
+        <EditText
+            android:id="@+id/et_password"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/hint_text"
+            android:inputType="textPassword"
+            android:background="@drawable/edittext_bg_noline"
+            android:hint="请输入6-8位数字和字母组合的密码"
+            android:imeOptions="actionDone"
+            android:singleLine="true"
+            />
+          </LinearLayout>
+
+    <View
+        android:layout_below="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/shadow_black" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <Button
+        android:id="@+id/next"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="重置密码"
+        android:background="@color/title_bg"/>
+</LinearLayout>

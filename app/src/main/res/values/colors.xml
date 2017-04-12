@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="transparent">#00ffffff</color>
+    <color name="colorPrimary">#A8A8A8</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="white">#ffffff</color>
+    <color name="graylight">#EAEAEA</color>
+    <color name="orangenormal">#F7B52A</color>
+    <color name="black">#313131</color>
+    <color name="forget">#252525</color>
+    <color name="bluedark">#90008fd5</color>
+    <color name="shadow_black">#8E8E8E</color>
+    <color name="title_bg">#874697</color>
+    <color name="wheel_timebtn_nor">#54a3fa</color>
+    <color name="wheel_timebtn_pre">#CCCCCC</color>
+    <color name="gray_back_light">#f2f4f6</color>
+    <color name="text_color">#646464</color>
+    <color name="hint_text">#BEBEBE</color>
+    <color name="chart1">#E45353</color>
+    <color name="chart2">#F6BE32</color>
+    <color name="chart3">#165AC4</color>
+    <color name="blue">#00ff00</color>
+    <color name="menu">#535353</color>
+    <color name="unselcet">#ACACAC</color>
+    <color name="service">#949494</color>
+    <color name="blue_contribution">#52d270</color>
+</resources>
+

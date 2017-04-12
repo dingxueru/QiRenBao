@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="16dp"
+    android:id="@+id/top">
+    <TextView
+        android:layout_marginTop="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:layout_marginBottom="5dp"
+        android:text="选择支付方式 "
+        android:textColor="@color/text_color"
+        android:textSize="15sp"/>
+
+    <RadioGroup
+        android:id="@+id/layout_nav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@color/white"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/shadow_black" />
+        <RadioButton
+            android:id="@+id/menu_zfb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="8dp"
+            android:layout_marginLeft="8dp"
+            android:background="@color/transparent"
+            android:button="@null"
+            android:checked="true"
+            android:drawablePadding="8dp"
+            android:drawableLeft="@drawable/zfbpay"
+            android:padding="3dp"
+            android:drawableRight="@drawable/radio_ischeck"
+            android:text="支付宝"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/shadow_black" />
+        <RadioButton
+            android:id="@+id/menu_wx"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="8dp"
+            android:layout_marginLeft="8dp"
+            android:background="@color/transparent"
+            android:button="@null"
+            android:drawablePadding="8dp"
+            android:drawableLeft="@drawable/wxpay"
+            android:padding="3dp"
+            android:drawableRight="@drawable/radio_ischeck"
+            android:text="微信钱包"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/shadow_black" />
+
+
+    </RadioGroup>
+    <Button
+        android:id="@+id/btnpublish"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="38dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginRight="15dp"
+        android:background="@color/title_bg"
+        android:layout_gravity="center_vertical"
+        android:text="确认" />
+</LinearLayout>

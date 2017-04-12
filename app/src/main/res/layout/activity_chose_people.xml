@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/total"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+    <com.xiumi.qirenbao.widget.PullToRefreshLayout
+        android:id="@+id/pull_to_refresh_index"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <include layout="@layout/refresh_head" />
+        <com.xiumi.qirenbao.widget.pullableView.PullableScrollView
+            android:id="@+id/pull_lable_scrollview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+            <com.xiumi.qirenbao.widget.ListViewForScrollView
+                android:id="@+id/base_list"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:scrollbars="none">
+            </com.xiumi.qirenbao.widget.ListViewForScrollView>
+        </com.xiumi.qirenbao.widget.pullableView.PullableScrollView>
+        <include layout="@layout/load_more" />
+    </com.xiumi.qirenbao.widget.PullToRefreshLayout>
+    <LinearLayout
+        android:id="@+id/show_base"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/settingselected" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="暂无更多数据~ ~" />
+    </LinearLayout>
+</RelativeLayout>

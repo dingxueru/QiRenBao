@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:id="@+id/login_regist">
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:background="@color/title_bg"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+        <TextView
+            android:id="@+id/back"
+            android:layout_width="40dp"
+            android:layout_marginLeft="16dp"
+            android:layout_height="match_parent"
+            android:drawableLeft="@drawable/jmui_back_btn"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="账户注册"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:textColor="@color/white"/>
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/shadow_black" />
+    <LinearLayout
+        android:id="@+id/phone_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="称呼"
+            android:textColor="@color/text_color"
+            android:textSize="15sp"
+            android:padding="5dp"
+            android:id="@+id/textView12" />
+
+        <EditText
+            android:id="@+id/et_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:textSize="15sp"
+            android:textColorHint="@color/hint_text"
+            android:textColor="@color/black"
+            android:background="@drawable/edittext_bg_noline"
+            android:hint="请输入您的称谓，如：王先生"
+            android:imeOptions="actionDone"
+            android:singleLine="true"
+            />
+    </LinearLayout>
+    <View
+        android:id="@+id/line1"
+        android:layout_below="@id/phone_layout"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/shadow_black" />
+<TextView
+    android:padding="8dp"
+    android:text="注：称呼不能修改"
+    android:textSize="10sp"
+    android:layout_marginLeft="12dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+    <Button
+        android:id="@+id/next"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="下一步"
+        android:background="@color/shadow_black"/>
+
+</LinearLayout>

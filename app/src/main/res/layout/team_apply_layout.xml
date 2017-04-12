@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xiumi.qirenbao.widget.PullToRefreshLayout
+    android:id="@+id/pull_to_refresh_index"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <include layout="@layout/refresh_head" />
+
+    <com.xiumi.qirenbao.widget.pullableView.PullableScrollView
+        android:id="@+id/pull_lable_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/empty_img"
+                android:visibility="gone"
+                android:gravity="center">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/empty_pic"/>
+            </LinearLayout>
+            <com.xiumi.qirenbao.widget.ListViewForScrollView
+                android:id="@+id/base_list"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:scrollbars="none"></com.xiumi.qirenbao.widget.ListViewForScrollView>
+
+        </LinearLayout>
+        </com.xiumi.qirenbao.widget.pullableView.PullableScrollView>
+
+    <include layout="@layout/load_more" />
+</com.xiumi.qirenbao.widget.PullToRefreshLayout>
+

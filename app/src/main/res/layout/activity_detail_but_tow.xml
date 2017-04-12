@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:id="@+id/total"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:gravity="center_vertical"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+    </android.support.v7.widget.Toolbar>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/shadow_black" />
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/shadow_black" />
+        <TextView
+            android:id="@+id/close"
+            android:padding="12dp"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:textColor="@color/black"
+            android:text="预约信息"
+            android:gravity="center_vertical"
+            android:textSize="16sp"
+            android:drawableRight="@drawable/close_click"
+            android:layout_height="wrap_content" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/shadow_black" />
+        <LinearLayout
+            android:layout_margin="16dp"
+            android:background="@drawable/textview_bord"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="称谓"
+                    android:textColor="@color/colorPrimary"
+                    android:padding="8dp"
+                    android:textSize="18sp" />
+                <EditText
+                    android:id="@+id/name"
+                    android:padding="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:singleLine="true"
+                    android:textSize="15sp"
+                    android:imeOptions="actionNext"
+                    android:background="@null"
+                    />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/shadow_black" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="电话"
+                    android:textColor="@color/colorPrimary"
+                    android:padding="8dp"
+                    android:textSize="18sp" />
+                <EditText
+                    android:id="@+id/phone"
+                    android:inputType="phone"
+                     android:padding="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:singleLine="true"
+                    android:imeOptions="actionDone"
+                    android:textSize="15sp"
+                    android:background="@null"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+          <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/shadow_black" />
+        <TextView
+            android:id="@+id/subscribe"
+            android:padding="12dp"
+            android:background="@color/title_bg"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:text="提交预约"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Base application theme. -->
+    <style name="Base.theme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+
+        <item name="android:windowAnimationStyle">@style/Base.Animation.Activity</item>
+        <!-- Actionbar color -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <!--Status bar color-->
+        <item name="colorPrimaryDark">@color/colorPrimary</item>
+        <item name="colorAccent">@color/accent_material_dark</item>
+
+        <!-- toolbar Style-->
+        <item name="toolbarStyle">@style/Base.theme.Widget.ToolbarStyle</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">false</item>
+
+        <!--Actionbar -->
+        <item name="actionBarSize">50dp</item>
+        <item name="actionMenuTextAppearance">@style/Base.TextAppearance.ActionBar.Menu</item>
+        <item name="android:actionMenuTextAppearance">@style/Base.TextAppearance.ActionBar.Menu
+        </item>
+
+        <item name="android:homeAsUpIndicator">@drawable/jmui_back_btn</item>
+        <item name="homeAsUpIndicator">@drawable/jmui_back_btn</item>
+
+        <!--Actionbar menu字体颜色-->
+        <item name="android:actionMenuTextColor">@color/white</item>
+        <item name="actionMenuTextColor">@color/white</item>
+        <!--button 样式-->
+        <item name="android:buttonStyle">@style/buttonStyle</item>
+        <item name="buttonStyle">@style/buttonStyle</item>
+
+
+
+
+        <!--progressbar-->
+        <item name="android:progressBarStyle">@style/android:Widget.Holo.ProgressBar</item>
+
+    </style>
+
+
+    <style name="Base.theme.Translation">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+</resources>

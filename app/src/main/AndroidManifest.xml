@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.xiumi.qirenbao">
+
+    <!-- 添加可以向外拨打电话的权限 -->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".app.App"
+        android:allowBackup="true"
+        android:icon="@drawable/qrb"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Base.theme"
+        tools:replace="android:allowBackup, android:label,android:icon">
+
+        <!-- 引导页面 -->
+        <activity
+            android:name=".guide.GuideActivity"
+            android:icon="@drawable/qrb"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/Base.theme.Translation">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".login.LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".register.RegisterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".register.RegisterFirstActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".myWallet.MyWalletActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".officebuilding.OfficeBuildingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".officebuilding.BuildingDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".officebuilding.DetailButtonActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".officebuilding.DetailButTowActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".home.company.CompanySearchActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".register.RegisterSecondActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".register.RegisterThirdActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".register.RegisterFourActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".login.ForgetpassActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".login.ForgetPassSecActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".login.ForgetPassThirdActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".location.LocationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".home.company.SerchResultActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mine.company.PeopleDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".message.partnership.PeoMessDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".team.partnership.AddActivity"
+            android:screenOrientation="portrait" />
+        <!-- 达人打赏页面 -->
+        <activity
+            android:name=".reward.expert.MasterRewardActivity"
+            android:screenOrientation="portrait" />
+        <!-- 达人打赏礼物选择页面 -->
+        <activity
+            android:name=".reward.expert.MasterRewardSelectActivity"
+            android:screenOrientation="portrait" />
+        <!-- 合伙人打赏页面 -->
+        <activity
+            android:name=".reward.partnership.PartnerRewardActivity"
+            android:screenOrientation="portrait" />
+        <!-- 合伙人礼物选择页面 -->
+        <activity
+            android:name=".reward.partnership.PartnerRewardSelectActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".home.company.PlaceOrderActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".team.partnership.ParnerMemberDetailActivity"
+            android:screenOrientation="portrait" />
+        <!-- 达人- 申请列表 -->
+        <activity
+            android:name=".team.expert.MasterApplyTeamActivity"
+            android:screenOrientation="portrait" />
+        <!-- 消息详情 -->
+        <activity
+            android:name=".message.expert.MessageDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mine.SettingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mine.company.ChangeNameActivity"
+            android:screenOrientation="portrait" />
+        <!-- 达人 我的钱包 -->
+        <activity
+            android:name=".myWallet.expert.MasterWalletActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".message.company.CompanyDetailActivity"
+            android:screenOrientation="portrait" />
+        <!-- 订单评论 -->
+        <activity
+            android:name=".order.OrderCommentActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".order.company.CompanyCommentActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".myWallet.WithdrawActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".order.partnership.DistributionMembersActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".reward.expert.MasterRewardChoseActivity"
+            android:screenOrientation="portrait" />
+        <!-- 达人团员详情 -->
+        <activity
+            android:name=".team.expert.MasterMemberDetailActivity"
+            android:screenOrientation="portrait" />
+        <!-- 达人-送出的礼物 -->
+        <activity
+            android:name=".mygift.expert.MasterGiftActivity"
+            android:screenOrientation="portrait" />
+        <!-- 达人-成长值记录 -->
+        <activity
+            android:name=".mygift.expert.MasterGrowthLogsActivity"
+            android:screenOrientation="portrait" />
+        <!-- 合伙人-成长值记录 -->
+        <activity
+            android:name=".mygift.partnership.PartnerGrowthLogsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mygift.partnership.PartnerGiftActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".team.partnership.AddPicActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".officebuilding.AskActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".officebuilding.PicStyleActivity"
+            android:screenOrientation="portrait"></activity>
+        <!-- 达人-申请加入团队页面-->
+        <activity
+            android:name=".team.expert.MasterApplyJoinTeamActivity"
+            android:screenOrientation="portrait"></activity>
+        <!-- 分配记录-->
+        <activity
+            android:name=".order.partnership.DistributionRecordActivity"
+            android:screenOrientation="portrait"></activity>
+        <!-- 活动报名记录 -->
+        <activity android:name=".team.partnership.PeopeleActivity"
+            android:screenOrientation="portrait"></activity>
+        <!-- 达人 团员详情-->
+        <activity android:name=".team.expert.MasterMemberDetailActivityNew"
+            android:screenOrientation="portrait"></activity>
+        <!-- 合伙人打赏 选择金额-->
+        <activity android:name=".reward.partnership.ChoseMoneyActivity"
+            android:screenOrientation="portrait"></activity>
+        <!-- 用户协议 -->
+        <activity android:name=".login.WebActivity"
+            android:screenOrientation="portrait"></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/top"
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="vertical">
+          <View
+              android:layout_width="match_parent"
+              android:layout_height="1px"
+              android:background="@color/shadow_black" />
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal"
+              android:gravity="center">
+              <TextView
+                  android:id="@+id/activity_title"
+                  android:layout_width="0dp"
+                  android:layout_height="wrap_content"
+                  android:gravity="center_vertical"
+                  android:layout_weight="1"
+                  android:padding="8dp"
+                  android:textColor="@color/black"
+                  android:textSize="16sp" />
+              <TextView
+                  android:visibility="gone"
+                  android:padding="5dp"
+                  android:id="@+id/add_show"
+                  android:text="进行中"
+                  android:textSize="10sp"
+                  android:textColor="@color/white"
+                  android:layout_marginRight="10dp"
+                  android:background="#5CCD69"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content" />
+              <TextView
+                  android:visibility="gone"
+                  android:padding="5dp"
+                  android:id="@+id/add_finish"
+                  android:text="已取消"
+                  android:textSize="10sp"
+                  android:textColor="@color/white"
+                  android:layout_marginRight="10dp"
+                  android:background="#FA2701"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content" />
+              <TextView
+                  android:visibility="gone"
+                  android:padding="5dp"
+                  android:id="@+id/has_finish"
+                  android:text="已完成"
+                  android:textSize="10sp"
+                  android:textColor="@color/white"
+                  android:layout_marginRight="10dp"
+                  android:background="#FA2701"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content" />
+
+          </LinearLayout>
+      </LinearLayout>
+           <View
+               android:layout_width="match_parent"
+               android:layout_height="1px"
+               android:background="@color/shadow_black" />
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="125dp"
+               android:orientation="horizontal">
+
+               <ImageView
+                   android:id="@+id/activity_image"
+                   android:layout_width="125dp"
+                   android:layout_height="125dp"
+                   android:scaleType="centerInside"
+                   android:padding="8dp"
+                   android:src="@drawable/add_pic" />
+
+               <View
+                   android:layout_width="1px"
+                   android:layout_height="match_parent"
+                   android:background="@color/shadow_black" />
+
+               <LinearLayout
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center"
+                   android:layout_marginLeft="8dp"
+                   android:layout_weight="1"
+                   android:orientation="vertical">
+                   <TextView
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:text="时间"
+                       android:layout_marginBottom="5dp"
+                       android:textColor="@color/black"
+                       android:textSize="14sp" />
+                   <TextView
+                       android:id="@+id/start_at"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:text="2017-08-07"
+                       android:textColor="@color/text_color"
+                       android:textSize="14sp" />
+                   <TextView
+                       android:layout_marginTop="10dp"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:text="地点"
+                       android:layout_marginBottom="5dp"
+                       android:textColor="@color/black"
+                       android:textSize="14sp" />
+                   <TextView
+                       android:id="@+id/activity_address"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:text="扬州市邗江区108号"
+                       android:textColor="@color/text_color"
+                       android:textSize="14sp" />
+               </LinearLayout>
+           </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/shadow_black" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="详情:"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:id="@+id/textView4" />
+
+        <TextView
+                android:id="@+id/description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingMultiplier="1"
+                android:paddingLeft="10dp"
+                android:paddingBottom="10dp"
+                android:paddingRight="10dp"
+                android:textColor="@color/black" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/shadow_black" />
+
+        <LinearLayout
+            android:id="@+id/has"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="已报名"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <com.xiumi.qirenbao.widget.FullGridView
+                android:id="@+id/history_girde"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="8dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:horizontalSpacing="5dp"
+                android:verticalSpacing="20dp"
+                android:scrollbars="none"
+                android:numColumns="6"></com.xiumi.qirenbao.widget.FullGridView>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/shadow_black" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/cancel"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_height="40dp"
+                android:background="@color/shadow_black"
+                android:text="取消"
+                android:textColor="@color/white" />
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/click_finish"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_height="40dp"
+                android:background="@color/title_bg"
+                android:text="完成"
+                android:textColor="@color/white" />
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/finish"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_height="40dp"
+                android:background="@color/title_bg"
+                android:text="已完成"
+                android:textColor="@color/white" />
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/has_gone"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_height="40dp"
+                android:background="@color/title_bg"
+                android:text="已完成"
+                android:textColor="@color/white" />
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/has_delete"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_height="40dp"
+                android:background="@color/shadow_black"
+                android:text="已取消"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

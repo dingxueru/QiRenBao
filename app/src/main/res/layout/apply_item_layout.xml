@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp">
+        <ImageView
+            android:id="@+id/people_head"
+            android:layout_width="65dp"
+            android:layout_height="65dp"/>
+        <LinearLayout
+            android:layout_marginLeft="10dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/apply_name"
+                    android:padding="8dp"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <ImageView
+                    android:id="@+id/sex_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/apply_occupation"
+                android:padding="8dp"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/apply_description"
+        android:layout_margin="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lineSpacingMultiplier="1.2"
+        android:textSize="15sp"
+        android:layout_marginBottom="30dp"
+        android:textColor="@color/black" />
+    <LinearLayout
+
+        android:layout_marginBottom="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+        <TextView
+            android:id="@+id/agress_add"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="45dp"
+            android:text="同意"
+            android:visibility="gone"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:background="@color/title_bg"/>
+        <TextView
+            android:id="@+id/has_add"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="45dp"
+            android:text="已同意"
+            android:visibility="gone"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:background="@color/title_bg"/>
+        <TextView
+            android:id="@+id/has_refress"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="45dp"
+            android:text="已拒绝"
+            android:visibility="gone"
+           android:gravity="center"
+            android:textColor="@color/white"
+            android:background="@color/shadow_black"/>
+
+        <TextView
+            android:id="@+id/disagree_add"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:visibility="gone"
+            android:layout_height="45dp"
+            android:gravity="center"
+            android:text="谢绝"
+            android:textColor="@color/white"
+            android:background="@color/shadow_black"/>
+
+    </LinearLayout>
+</LinearLayout>
